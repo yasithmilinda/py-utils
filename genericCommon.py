@@ -1648,6 +1648,7 @@ def dumpJsonToFile(outfilename, dictToWrite, indentFlag=True, extraParams=None):
 			json.dump(dictToWrite, outfile, ensure_ascii=False)
 
 		outfile.close()
+		os.chmod(outfilename, 0o777)
 
 		if( extraParams['verbose'] ):
 			print('\twriteTextToFile(), wrote:', outfilename)
