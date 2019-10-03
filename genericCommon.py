@@ -19,18 +19,18 @@ from subprocess import check_output
 from functools import reduce
 from random import randint
 from os.path import dirname, abspath
-# from textstat.textstat import textstat
+from textstat.textstat import textstat
 from urllib.parse import urlparse, quote, quote_plus
-# from tldextract import extract
+from tldextract import extract
 
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import TimeoutException
 
-# from boilerpipe.extract import Extractor
-# from newspaper import Article
+from boilerpipe.extract import Extractor
+from newspaper import Article
 from mimetypes import MimeTypes
-# from dateparser import parse as parseDateStr
+from dateparser import parse as parseDateStr
 
 #class DocVect - start
 import math
